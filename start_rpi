@@ -1,0 +1,7 @@
+#!/bin/sh -e
+sudo killall TwoWheeler &
+sudo killall bluetoothd &
+sleep 2
+sudo ./TwoWheeler &
+sleep 3
+sudo bluetoothd &
